@@ -1,24 +1,21 @@
 class changeHTML {
-   element(element) {
-     if(element.tagName === "title") {
-       element.setInnerContent("Cloudflare Product Review");
+  element(element) {
+    if(element.tagName === "title") {
+      element.setInnerContent("Cloudflare Product Review");
+    }
+    if(element.tagName === "h1") {
+      element.setInnerContent("Cloudflare Stream");
+    }
+    if(element.tagName === "p") {
+      element.setInnerContent("In today's presentation we'll discuss the benefits of using Cloudflare for your company's streaming service");
+    }
+    if(element.tagName === "a") {
+      element.setAttribute("href", "https://www.youtube.com/watch?v=K0QS55ST54g");
+      element.setInnerContent("Watch Video");
      }
-     if(element.tagName === "h1") {
-       element.setInnerContent("Cloudflare Stream");
-     }
-     if(element.tagName === "p") {
-       element.setInnerContent("In today's video we'll discuss the benefits of using Cloudflare for your company's streaming service");
-     }
-     if(element.tagName === "a") {
-       element.setAttribute("href", "https://www.youtube.com");
-       element.setInnerContent("Watch Video");
-      }
-    //   if(element.tagName === "a") {
-    //     element.setAttribute("href = https://www.youtube.com");
-    //     element.after("Watch this Video");
-    //  }
-   }
- }
+
+  }
+}
 
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request));

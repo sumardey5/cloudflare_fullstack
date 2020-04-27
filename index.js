@@ -1,16 +1,17 @@
+  
 class changeHTML {
   element(element) {
     if(element.tagName === "title") {
       element.setInnerContent("Cloudflare Product Review");
     }
     if(element.tagName === "h1") {
-      element.setInnerContent("Cloudflare Stream");
+      element.setInnerContent("Cloudflare Gateway");
     }
     if(element.tagName === "p") {
-      element.setInnerContent("In today's presentation we'll discuss the benefits of using Cloudflare for your company's streaming service");
+      element.setInnerContent("In today's presentation we'll discuss the benefits of using Cloudflare Gateway");
     }
     if(element.tagName === "a") {
-      element.setAttribute("href", "https://www.youtube.com/watch?v=K0QS55ST54g");
+      element.setAttribute("href", "https://www.youtube.com/watch?v=lVZt6u03b4U");
       element.setInnerContent("Watch Video");
      }
 
